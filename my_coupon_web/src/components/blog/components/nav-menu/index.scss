@@ -1,0 +1,51 @@
+@import "src/sass/variables";
+
+#nav-menu-wrapper {
+    box-shadow:  0 0 5px rgba(0,0,0,.12);
+    margin-bottom: $standardMargin;
+    .top-menu {
+        .nav-item {
+            &:hover {
+                .sub-nav {
+                    display: block;
+                }
+            }
+            .sub-nav{
+                border-top: 4px solid #ff6b6b;
+                display: none;
+                position: absolute;
+                left: 0;
+                top: 3.1em;
+                z-index: 100;
+                min-width: 16em;
+                background-color: $whiteColor;
+                .nav-item {
+                    display: block;
+                    width: 100%;
+                    .nav-link {
+                        padding: 0.6em $standardPadding;
+                    }
+                }
+            }
+            .nav-link {
+                color: $primaryColor;
+                font-weight: bold;
+                padding: 0.75em $standardPadding;
+                font-size: 1.1em;
+                &:hover {
+                    background-color: $primaryColor;
+                    color:$whiteColor;
+                }
+            }
+            .active {
+                background-color: $primaryColor;
+                color:$whiteColor;
+            }
+            .nav-home {
+                svg {
+                    font-size: 1.4em;
+                }
+            }
+        }
+    }
+}

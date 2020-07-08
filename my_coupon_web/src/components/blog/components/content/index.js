@@ -1,9 +1,8 @@
 import React from "react";
-import './index.scss';
+import './index.css';
 import {Link} from "react-router-dom";
-import HomeSlider from "../components/home-slider";
 
-export default class Home extends React.Component{
+export default class Content extends React.Component{
     render() {
         return (
             <main id="main-wrapper">
@@ -12,7 +11,60 @@ export default class Home extends React.Component{
                 </section>
                 {/*banner-widget*/}
 
-                <HomeSlider/>
+                <section className="home-slider">
+                    <div className="container">
+                        <div className="row">
+                            <div className="sliders-widget col-md-9">
+                                <div id="slider-banner" className="carousel slide" data-ride="carousel">
+                                    <ol className="carousel-indicators">
+                                        <li data-target="#slider-banner" data-slide-to="0" className="active"/>
+                                        <li data-target="#slider-banner" data-slide-to="1"/>
+                                        <li data-target="#slider-banner" data-slide-to="2"/>
+                                    </ol>
+
+                                    <div className="carousel-inner">
+                                        <div className="item active">
+                                            <img src="https://cdn.chanhtuoi.com/uploads/2020/05/untitled-2-7.jpg" alt="Chania"/>
+                                            <div className="carousel-caption">
+                                                <h3>Los Angeles</h3>
+                                                <p>LA is always so much fun!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {/*carousel-inner*/}
+
+                                    <a className="left carousel-control" href="#slider-banner" data-slide="prev">
+                                        <span className="glyphicon glyphicon-chevron-left"/>
+                                        <span className="sr-only">Previous</span>
+                                    </a>
+                                    <a className="right carousel-control" href="#slider-banner" data-slide="next">
+                                        <span className="glyphicon glyphicon-chevron-right"/>
+                                        <span className="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            {/*sliders-widget*/}
+                            <div className="banner-widget col-md-3">
+                                <div className="banner-box">
+                                    <Link to="">
+                                        <img src="https://cdn.chanhtuoi.com/uploads/2020/02/phong-covid-19.png" alt="" className="img"/>
+                                    </Link>
+                                </div>
+                                {/*banner-box*/}
+                                <div className="banner-box">
+                                    <Link to="">
+                                        <img src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="" className="img"/>
+                                    </Link>
+                                </div>
+                                {/*banner-box*/}
+                            </div>
+                            {/*banner-widget*/}
+                        </div>
+                        {/*row*/}
+                    </div>
+                    {/*container*/}
+                </section>
+                {/*home-home-slider*/}
 
                 <section className="content-section">
                     <div className="container">
@@ -20,7 +72,7 @@ export default class Home extends React.Component{
                             <div className="widget-content content list-item list-provider col-md-12">
                                 <div className="widget-header">
                                     <h3 className="text-header">
-                                        <Link to=""><span>Mã giảm giá</span></Link>
+                                        Mã giảm giá
                                     </h3>
                                 </div>
                                 <div className="widget-body">
@@ -28,7 +80,7 @@ export default class Home extends React.Component{
                                         <div className="col-md-3">
                                             <div className="card">
                                                 <div className="card-title">
-                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card images cap"/>
+                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card image cap"/>
                                                 </div>
                                                 <div className="card-body">
                                                     <h5 className="card-title">Mã giảm giá Lazada</h5>
@@ -40,7 +92,7 @@ export default class Home extends React.Component{
                                         <div className="col-md-3">
                                             <div className="card">
                                                 <div className="card-title">
-                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card images cap"/>
+                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card image cap"/>
                                                 </div>
                                                 <div className="card-body">
                                                     <h5 className="card-title">Mã giảm giá Lazada</h5>
@@ -52,7 +104,7 @@ export default class Home extends React.Component{
                                         <div className="col-md-3">
                                             <div className="card">
                                                 <div className="card-title">
-                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card images cap"/>
+                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card image cap"/>
                                                 </div>
                                                 <div className="card-body">
                                                     <h5 className="card-title">Mã giảm giá Lazada</h5>
@@ -64,7 +116,7 @@ export default class Home extends React.Component{
                                         <div className="col-md-3">
                                             <div className="card">
                                                 <div className="card-title">
-                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card images cap"/>
+                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card image cap"/>
                                                 </div>
                                                 <div className="card-body">
                                                     <h5 className="card-title">Mã giảm giá Lazada</h5>
@@ -76,7 +128,7 @@ export default class Home extends React.Component{
                                         <div className="col-md-3">
                                             <div className="card">
                                                 <div className="card-title">
-                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card images cap"/>
+                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card image cap"/>
                                                 </div>
                                                 <div className="card-body">
                                                     <h5 className="card-title">Mã giảm giá Lazada</h5>
@@ -88,7 +140,7 @@ export default class Home extends React.Component{
                                         <div className="col-md-3">
                                             <div className="card">
                                                 <div className="card-title">
-                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card images cap"/>
+                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card image cap"/>
                                                 </div>
                                                 <div className="card-body">
                                                     <h5 className="card-title">Mã giảm giá Lazada</h5>
@@ -100,7 +152,7 @@ export default class Home extends React.Component{
                                         <div className="col-md-3">
                                             <div className="card">
                                                 <div className="card-title">
-                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card images cap"/>
+                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card image cap"/>
                                                 </div>
                                                 <div className="card-body">
                                                     <h5 className="card-title">Mã giảm giá Lazada</h5>
@@ -112,7 +164,7 @@ export default class Home extends React.Component{
                                         <div className="col-md-3">
                                             <div className="card">
                                                 <div className="card-title">
-                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card images cap"/>
+                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card image cap"/>
                                                 </div>
                                                 <div className="card-body">
                                                     <h5 className="card-title">Mã giảm giá Lazada</h5>
@@ -146,7 +198,7 @@ export default class Home extends React.Component{
                                         <div className="col-md-3">
                                             <div className="card">
                                                 <div className="card-title">
-                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card images cap"/>
+                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card image cap"/>
                                                 </div>
                                                 <div className="card-body">
                                                     <h5 className="card-title">Mã giảm giá Lazada</h5>
@@ -158,7 +210,7 @@ export default class Home extends React.Component{
                                         <div className="col-md-3">
                                             <div className="card">
                                                 <div className="card-title">
-                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card images cap"/>
+                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card image cap"/>
                                                 </div>
                                                 <div className="card-body">
                                                     <h5 className="card-title">Mã giảm giá Lazada</h5>
@@ -170,7 +222,7 @@ export default class Home extends React.Component{
                                         <div className="col-md-3">
                                             <div className="card">
                                                 <div className="card-title">
-                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card images cap"/>
+                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card image cap"/>
                                                 </div>
                                                 <div className="card-body">
                                                     <h5 className="card-title">Mã giảm giá Lazada</h5>
@@ -182,7 +234,7 @@ export default class Home extends React.Component{
                                         <div className="col-md-3">
                                             <div className="card">
                                                 <div className="card-title">
-                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card images cap"/>
+                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card image cap"/>
                                                 </div>
                                                 <div className="card-body">
                                                     <h5 className="card-title">Mã giảm giá Lazada</h5>
@@ -194,7 +246,7 @@ export default class Home extends React.Component{
                                         <div className="col-md-3">
                                             <div className="card">
                                                 <div className="card-title">
-                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card images cap"/>
+                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card image cap"/>
                                                 </div>
                                                 <div className="card-body">
                                                     <h5 className="card-title">Mã giảm giá Lazada</h5>
@@ -206,7 +258,7 @@ export default class Home extends React.Component{
                                         <div className="col-md-3">
                                             <div className="card">
                                                 <div className="card-title">
-                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card images cap"/>
+                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card image cap"/>
                                                 </div>
                                                 <div className="card-body">
                                                     <h5 className="card-title">Mã giảm giá Lazada</h5>
@@ -218,7 +270,7 @@ export default class Home extends React.Component{
                                         <div className="col-md-3">
                                             <div className="card">
                                                 <div className="card-title">
-                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card images cap"/>
+                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card image cap"/>
                                                 </div>
                                                 <div className="card-body">
                                                     <h5 className="card-title">Mã giảm giá Lazada</h5>
@@ -230,7 +282,7 @@ export default class Home extends React.Component{
                                         <div className="col-md-3">
                                             <div className="card">
                                                 <div className="card-title">
-                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card images cap"/>
+                                                    <img className="card-img-top" src="https://cdn.chanhtuoi.com/uploads/2020/02/moi-tham-gia-group-1.png" alt="Card image cap"/>
                                                 </div>
                                                 <div className="card-body">
                                                     <h5 className="card-title">Mã giảm giá Lazada</h5>
@@ -265,6 +317,6 @@ export default class Home extends React.Component{
 
             </main>
             // main-wrapper
-        )
+        );
     }
 }

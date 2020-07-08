@@ -1,0 +1,16 @@
+.sliders-widget {
+  max-height: 22.3em;
+  overflow: hidden;
+  max-width: calc(100% - 315px);
+  .carousel {
+    .item {
+      a {
+        display: block;
+        img {
+          width: 100%;
+          height: 22.3em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import "src/sass/variables";
+.widget-content {
+    .widget-header {
+        .text-header {
+            text-transform:uppercase ;
+            a {
+                position: relative;
+                display: block;
+                box-sizing: border-box;
+                border: 1px solid rgba(0, 0, 0, 0.12);
+                z-index: 10;
+                color:$whiteColor;
+                padding:0.6em 1em;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: -0.3em;
+                    left:-0.1em;
+                    width: 18em;
+                    height: 3em;
+                    background: url("/assets/images/header.png") no-repeat center top;
+                    background-size: cover;
+                    z-index: -1;
+                }
+                span {
+                    font-size: 1.3em;
+                }
+            }
+
+        }
+    }
+}

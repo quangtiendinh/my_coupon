@@ -1,0 +1,15 @@
+@import "src/sass/variables";
+#header-wrapper {
+    background-color: $primaryColor;
+    padding: $standardPadding 0;
+    box-sizing: border-box;
+    .search-wrapper {
+        margin-top: $standardMargin;
+    }
+    .auth-wrapper {
+        margin-top: $standardMargin;
+        button:first-child {
+            margin-right: $standardMargin;
+        }
+    }
+}
