@@ -1,13 +1,14 @@
 @import "src/sass/variables";
 .widget-content {
     .widget-header {
+        margin-bottom: 1em;
         .text-header {
             text-transform:uppercase ;
             a {
                 position: relative;
                 display: block;
                 box-sizing: border-box;
-                border: 1px solid rgba(0, 0, 0, 0.12);
+                border-bottom: 1px solid rgba(73,127,174,0.3);
                 z-index: 10;
                 color:$whiteColor;
                 padding:0.6em 1em;

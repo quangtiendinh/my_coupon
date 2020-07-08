@@ -8,3 +8,39 @@
     margin: 0 auto;
   }
 }
+a:hover {
+  text-decoration: none;
+}
+
+.content-section-with-sidebar {
+  .widget-content {
+    max-width: calc(100% - 315px);
+    .card {
+      border: 1px solid rgba(73,127,174,0.3);
+      margin-right: 1em;
+      margin-bottom: 1em;
+      width: calc((100% / 4.22));
+      color: $primaryColor;
+      .card-img-top {
+        padding: 1em;
+        box-sizing: border-box;
+        display: block;
+        height: 14em;
+      }
+      .card-body {
+        padding-top: 0;
+        color: black;
+        .card-title {
+          color: $primaryColor;
+          font-size: $fontSize;
+          line-height: 1.4em;
+          font-weight: bold;
+        }
+      }
+    }
+    .card:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
+

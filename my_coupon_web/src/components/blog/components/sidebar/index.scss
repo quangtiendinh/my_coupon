@@ -1,0 +1,21 @@
+@import 'src/sass/variables';
+
+.sidebar {
+  max-width: 300px;
+  padding-left: 0;
+  .item {
+    display: block;
+    margin-bottom: $standardMargin;
+    img {
+      width: 100%;
+      height: 150px;
+    }
+  }
+  .sidebar-widget {
+    width: 300px;
+  }
+}
+.sidebar-without-banner {
+  padding-right: 15px;
+  padding-left: 15px;
+}
