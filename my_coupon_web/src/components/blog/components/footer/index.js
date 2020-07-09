@@ -1,6 +1,9 @@
 import React from "react";
-import './index.css';
+import './index.scss';
 import {Link} from "react-router-dom";
+import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faFacebook, faFacebookF, faSkype, faTwitter, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import {faEnvelope, faSearch} from "@fortawesome/free-solid-svg-icons";
 
 export default class Footer extends React.Component{
     render() {
@@ -8,26 +11,46 @@ export default class Footer extends React.Component{
             <footer id="footer-wrapper">
                 <nav className="footer-menu">
                     <div className="container">
-                        <ul className="nav bottom-menu">
-                            <li className="nav-item">
-                                <Link to="/" className="nav-link active">Trang chủ</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/" className="nav-link active">Ngành hàng</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/" className="nav-link active">Mã khuyến mãi</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/" className="nav-link active">Hướng dẫn</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/" className="nav-link active">Đánh giá</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/" className="nav-link active">Tin khuyến mãi</Link>
-                            </li>
-                        </ul>
+                      <div className="row">
+                          <div className="col-md-4 widget socials-widget">
+                              <span> Kết nối với chúng tôi: </span>
+                              <ul className="nav bottom-menu d-inline-flex">
+                                  <li className="nav-item">
+                                      <Link to="/" className="nav-link active"><FontAwesomeIcon icon={faFacebookF}/></Link>
+                                  </li>
+                                  <li className="nav-item">
+                                      <Link to="/" className="nav-link active"><FontAwesomeIcon icon={faSkype}/></Link>
+                                  </li>
+                                  <li className="nav-item">
+                                      <Link to="/" className="nav-link active"><FontAwesomeIcon icon={faYoutube}/></Link>
+                                  </li>
+                                  <li className="nav-item">
+                                      <Link to="/" className="nav-link active"><FontAwesomeIcon icon={faEnvelope}/></Link>
+                                  </li>
+                              </ul>
+                          </div>
+                          {/*socials-widget*/}
+
+                          <div className="col-md-5 register-widget">
+                            <span>Đăng ký nhận bản tin: </span>
+                              <form action="" className="d-inline-flex form-register">
+                                  <div className="input-group">
+                                      <input type="email" id="email" className="form-control" placeholder="Nhập địa chỉ email của bạn..."/>
+                                      <div className="input-group-append">
+                                          <button className="btn btn-success btn-search" type="submit">Đăng ký</button>
+                                      </div>
+                                  </div>
+                              </form>
+                              {/*form-register*/}
+                          </div>
+                          {/*register-widget*/}
+
+                          <div className="col-md-3 widget facebook-widget">
+                            <Link to="" className="btn btn-danger btn-fb-message">Nhận tin nhắn khuyến mãi</Link>
+                          </div>
+                          {/*facebook-widget*/}
+                      </div>
+                       {/*row*/}
                     </div>
                     {/*container*/}
                 </nav>

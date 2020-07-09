@@ -1,0 +1,29 @@
+@import "src/sass/_variables.sass";
+
+#footer-wrapper {
+    margin-top: $standardMargin * 2;
+    .footer-menu {
+        background-color: $primaryColor;
+        color:$whiteColor;
+        padding: $standardPadding;
+        box-sizing: border-box;
+        a {
+            color: $whiteColor;
+        }
+        .register-widget {
+            .form-register {
+                #email {
+                    width: 15em;
+                }
+            }
+        }
+        .facebook-widget {
+            a {
+                display: block;
+                width: 100%;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+}
