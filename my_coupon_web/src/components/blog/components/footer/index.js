@@ -3,7 +3,8 @@ import './index.scss';
 import {Link} from "react-router-dom";
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faFacebookF, faSkype, faTwitter, faYoutube} from "@fortawesome/free-brands-svg-icons";
-import {faEnvelope, faSearch} from "@fortawesome/free-solid-svg-icons";
+import {faEnvelope, faFire, faSearch} from "@fortawesome/free-solid-svg-icons";
+import SocialMenu from "../../../../shared/components/social-menu";
 
 export default class Footer extends React.Component{
     render() {
@@ -14,20 +15,7 @@ export default class Footer extends React.Component{
                       <div className="row">
                           <div className="col-md-4 widget socials-widget">
                               <span> Kết nối với chúng tôi: </span>
-                              <ul className="nav bottom-menu d-inline-flex">
-                                  <li className="nav-item">
-                                      <Link to="/" className="nav-link active"><FontAwesomeIcon icon={faFacebookF}/></Link>
-                                  </li>
-                                  <li className="nav-item">
-                                      <Link to="/" className="nav-link active"><FontAwesomeIcon icon={faSkype}/></Link>
-                                  </li>
-                                  <li className="nav-item">
-                                      <Link to="/" className="nav-link active"><FontAwesomeIcon icon={faYoutube}/></Link>
-                                  </li>
-                                  <li className="nav-item">
-                                      <Link to="/" className="nav-link active"><FontAwesomeIcon icon={faEnvelope}/></Link>
-                                  </li>
-                              </ul>
+                              <SocialMenu/>
                           </div>
                           {/*socials-widget*/}
 
@@ -46,7 +34,7 @@ export default class Footer extends React.Component{
                           {/*register-widget*/}
 
                           <div className="col-md-3 widget facebook-widget">
-                            <Link to="" className="btn btn-danger btn-fb-message">Nhận tin nhắn khuyến mãi</Link>
+                            <Link to="" className="btn btn-danger btn-fb-message"><FontAwesomeIcon icon={faFire}/> Nhận tin nhắn khuyến mãi</Link>
                           </div>
                           {/*facebook-widget*/}
                       </div>

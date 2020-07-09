@@ -10,6 +10,10 @@
         a {
             color: $whiteColor;
         }
+        span {
+            padding-right: 0.5em;
+            font-weight: bold;
+        }
         .register-widget {
             .form-register {
                 #email {

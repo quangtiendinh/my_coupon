@@ -1,0 +1,35 @@
+.social-menu-component {
+  .fa-social {
+    margin-right: 1em;
+    width: 2.6em;
+    height: 2.4em;
+    border-radius: 0.3em;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(73, 127, 174, 0.5);
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      opacity: 0.5;
+      transition: 0.2s;
+    }
+    svg {
+      font-size: 1.4em;
+    }
+  }
+  .fa-facebook {
+    background-color: #1C4E92;
+  }
+  .fa-skype {
+    background-color: #0FA6E6;
+  }
+  .fa-youtube {
+    background-color: #F60012;
+  }
+  .fa-email {
+    background-color: #CE483E;
+  }
+}
