@@ -1,0 +1,19 @@
+@import "src/sass/variables";
+
+.read-more-component {
+  width: 100%;
+  margin:0 auto;
+  text-align: center;
+  margin-bottom: 1em;
+  a {
+    padding: 0.3em 5.4em;
+    background-color: transparent;
+    color: $primaryColor;
+    border-color: $primaryColor;
+    font-weight: bold;
+    &:hover {
+      background-color: $primaryColor;
+      color:$whiteColor;
+    }
+  }
+}

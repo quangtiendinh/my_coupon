@@ -6,7 +6,7 @@ import {Carousel} from "react-responsive-carousel";
 export default class CarouselSlider extends React.Component {
     render() {
         return (
-            <Carousel autoPlay={this.props.autoPlay} infiniteLoop={this.props.infiniteLoop} showThumbs={this.props.showThumbs}>
+            <Carousel autoPlay={this.props.autoPlay} infiniteLoop={this.props.infiniteLoop} showThumbs={this.props.showThumbs} >
                 <div className="item active">
                     <Link to="/">
                         <img src="https://salt.tikicdn.com/cache/w885/ts/banner/e8/e5/36/0419895e3b41b57d8d133372621a76ba.jpg" alt="Chania"/>
