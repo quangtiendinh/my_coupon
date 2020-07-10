@@ -3,7 +3,7 @@ import './index.scss';
 import {Link} from "react-router-dom";
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faFacebookF, faSkype, faTwitter, faYoutube} from "@fortawesome/free-brands-svg-icons";
-import {faEnvelope, faFire, faSearch} from "@fortawesome/free-solid-svg-icons";
+import {faArrowLeft, faCaretRight, faEnvelope, faFire, faSearch} from "@fortawesome/free-solid-svg-icons";
 import SocialMenu from "../../../../shared/components/social-menu";
 
 export default class Footer extends React.Component{
@@ -69,33 +69,44 @@ export default class Footer extends React.Component{
                                 <ul className="nav flex-column">
                                     <li className="nav-item">
                                         <Link to="" className="nav-link">
-                                            Câu hỏi thường gặp
+                                            <FontAwesomeIcon icon={faCaretRight}/>Câu hỏi thường gặp
                                         </Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link to="" className="nav-link">
-                                            Chính sách bảo mật
+                                            <FontAwesomeIcon icon={faCaretRight}/>Chính sách bảo mật
                                         </Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link to="" className="nav-link">
-                                            Hướng dẫn
+                                            <FontAwesomeIcon icon={faCaretRight}/>Hướng dẫn
                                         </Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link to="" className="nav-link">
-                                            Chính sách bảo mật
+                                            <FontAwesomeIcon icon={faCaretRight}/>Liên hệ
                                         </Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link to="" className="nav-link">
-                                            Hướng dẫn
+                                            <FontAwesomeIcon icon={faCaretRight}/>Kiếm tiền online
                                         </Link>
                                     </li>
                                 </ul>
                             </div>
                             {/*widget-menu*/}
                             <div className="col-md-3 widget-apps">
+                                <div className="widget-header">
+                                    <h5 className="text-header">Tải ứng dụng cho Smart phone tại: </h5>
+                                </div>
+                                <div className="widget-body">
+                                    <Link to="">
+                                        <img src="/assets/images/google_play.png"/>
+                                    </Link>
+                                    <Link to="">
+                                        <img src="/assets/images/app_store.png"/>
+                                    </Link>
+                                </div>
 
                             </div>
                             {/*widget-apps*/}

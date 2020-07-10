@@ -17,7 +17,7 @@
         .register-widget {
             .form-register {
                 #email {
-                    width: 15em;
+                    width: 16.3em;
                 }
             }
         }
@@ -44,6 +44,43 @@
                     img {
                         vertical-align: middle;
                         width: 100%;
+                    }
+                }
+            }
+        }
+        .widget-apps {
+            .text-header {
+                color:$primaryColor;
+                font-weight: bold;
+                font-size: 1.1em;
+            }
+            .widget-body {
+                display: block;
+                overflow: hidden;
+                a {
+                    display: block;
+                    img {
+                        width:60%;
+                        height: auto;
+                        margin: 0 auto;
+                        display: block;
+                    }
+                }
+            }
+        }
+        .widget-menu {
+            .nav-item {
+                a {
+                    color: $primaryColor;
+                    padding: 0.5em;
+                    font-weight: bold;
+                    &:hover {
+                        background-color: $primaryColor;
+                        color:#fff;
+                    }
+                    svg {
+                        margin-right: 0.5em;
+                        font-size: 1.3em;
                     }
                 }
             }

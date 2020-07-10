@@ -5,9 +5,8 @@ import HomeSlider from "../components/home-slider";
 import Card from "../components/card";
 import Sidebar from "../components/sidebar";
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faClock, faComments, faTimes, faUser} from "@fortawesome/free-solid-svg-icons";
+import {faClock, faUser} from "@fortawesome/free-solid-svg-icons";
 import ReadMore from "../components/read-more";
-import SlickSlider from "../components/slick-slider";
 
 export default class Home extends React.Component{
     render() {
