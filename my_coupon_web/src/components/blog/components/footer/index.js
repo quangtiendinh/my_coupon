@@ -56,10 +56,10 @@ export default class Footer extends React.Component{
                                 </div>
                                 <div className="widget-body">
                                     <p>
-                                        Chanh Tươi là cộng đồng cho người mua sắm thông minh. Bạn có thể tìm kiếm và chia sẻ khuyến mại, mã giảm giá tốt nhất trên và ngoài Internet.
+                                        Bloggiamgia.vn là nơi chia sẽ thông tin khuyến mãi, mã giảm giá khi mua hàng online tại các website mua sắm trực tuyến lớn và uy tín tại Việt Nam.
                                     </p>
                                     <p>
-                                        Thanh nhiệt độ (Lạnh/ Nóng) ở mỗi khuyến mãi là độc lập và chỉ có thành viên mới có thể đánh giá
+                                        Ngoài ra chúng tôi còn tìm kiếm và so sánh giá hàng ngàn sản phẩm chất lượng từ các nhà bán hàng uy tín giúp bạn có thể dễ dàng tìm mua các sản phẩm tốt nhất với mức giá phải chăng nhất…[+ Xem Thêm]
                                     </p>
                                 </div>
 
